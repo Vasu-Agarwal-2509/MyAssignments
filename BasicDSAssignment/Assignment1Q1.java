@@ -1,3 +1,5 @@
+package BasicDSAssignment;
+
 import java.util.Scanner;
 class ArmstrongOrNot{
     public boolean armstrongCheck(int num){
