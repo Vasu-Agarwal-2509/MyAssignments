@@ -36,8 +36,8 @@ class IceCream extends DesertItem {
     }
 }
 public class Assignment2Q7 {
+    static Assignment2Q7 obj = new Assignment2Q7();
     public static void main(String[] args) {
-        Assignment2Q7 obj = new Assignment2Q7();
         obj.selectRoles();
     }
     private void selectRoles(){
@@ -45,12 +45,10 @@ public class Assignment2Q7 {
         System.out.println("Customer");
         System.out.println("Enter your role: ");
         Scanner sc = new Scanner(System.in);
-        Assignment2Q7 obj = new Assignment2Q7();
         String role = sc.next();
         obj.roles(role);
     }
     private void roles(String role){
-        Assignment2Q7 obj = new Assignment2Q7();
         if(role.equals("Owner")){
             obj.addItems();
         }
@@ -64,7 +62,6 @@ public class Assignment2Q7 {
         System.out.println("3.IceCream");
         System.out.println("Enter your choice: ");
         Scanner sc = new Scanner(System.in);
-        Assignment2Q7 obj = new Assignment2Q7();
         int choice = sc.nextInt();
         obj.addItemsOperation(choice);
     }
@@ -95,7 +92,6 @@ public class Assignment2Q7 {
         System.out.println("3.IceCream");
         System.out.println("Enter your choice: ");
         Scanner sc = new Scanner(System.in);
-        Assignment2Q7 obj = new Assignment2Q7();
         int choice = sc.nextInt();
         obj.placeOrderOperation(choice);
     }
