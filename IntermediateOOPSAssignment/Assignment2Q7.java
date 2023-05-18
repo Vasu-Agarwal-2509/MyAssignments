@@ -37,8 +37,17 @@ class IceCream extends DesertItem {
 }
 public class Assignment2Q7 {
     static Assignment2Q7 obj = new Assignment2Q7();
+    Candy candyObj = new Candy();
+    Cookie cookieObj = new Cookie();
+    IceCream iceCreamObj = new IceCream();
     public static void main(String[] args) {
-        obj.selectRoles();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of test case:");
+        int testCase = sc.nextInt();
+        while(testCase != 0){
+            obj.selectRoles();
+            testCase--;
+        }
     }
     private void selectRoles(){
         System.out.println("Owner");
@@ -68,19 +77,16 @@ public class Assignment2Q7 {
     private void addItemsOperation(int choice) {
         Scanner sc = new Scanner(System.in);
         if(choice == 1){
-            Candy candyObj = new Candy();
             System.out.println("Enter number of candies:");
             int numOfCandies = sc.nextInt();
             candyObj.addCandies(numOfCandies);
         }
         else if(choice == 2){
-            Cookie cookieObj = new Cookie();
             System.out.println("Enter number of cookies:");
             int numOfCookie = sc.nextInt();
             cookieObj.addCookies(numOfCookie);
         }
         else{
-            IceCream iceCreamObj = new IceCream();
             System.out.println("Enter number of IceCream:");
             int numOfIceCream = sc.nextInt();
             iceCreamObj.addIceCreams(numOfIceCream);
@@ -98,16 +104,14 @@ public class Assignment2Q7 {
     private void placeOrderOperation(int choice) {
         Scanner sc = new Scanner(System.in);
         if(choice == 1){
-            Candy candyObj = new Candy();
             System.out.println(candyObj.getCost());
         }
         else if(choice == 2){
-            Cookie cookieObj = new Cookie();
             System.out.println(cookieObj.getCost());
         }
         else{
-            IceCream iceCreamObj = new IceCream();
             System.out.println(iceCreamObj.getCost());
         }
     }
 }
+
