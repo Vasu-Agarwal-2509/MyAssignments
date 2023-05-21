@@ -14,6 +14,5 @@ public class Assignment6Q2 {
         StringBuffer stringBuffer2 = new StringBuffer("This method returns the reversed object on which it was called");
         stringBuffer2.reverse();
         System.out.println(stringBuffer2);
-
     }
 }
