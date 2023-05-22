@@ -4,20 +4,20 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD})
 @interface Info{
-    int authorId() default 2509;
-    String author();
-    String supervisor();
-    String date() default "18-May-2023";
-    String time() default "11:00";
-    int version() default 1;
-    String description();
+    int authorId();
+    String author() default "Vasu";
+    String supervisor() default "ABC";
+    String date();
+    String time();
+    int version();
+    String description() default "Annotation assignment";
 }
 
-@Info(author = "Vasu", supervisor = "ABC", description = "Annotation Assignment")
+@Info(authorId = 2509, date = "18-May-2023", time = "11:00", version = 1)
 public class Assignment9Q2 {
     public static void main(String[] args) {
     }
-    @Info(author = "Vasu", supervisor = "DEF", description = "New Variable")
+    @Info(authorId = 25, date = "22-May-2023", time = "05:00", version = 2)
     void testMethod(){
 
     }
