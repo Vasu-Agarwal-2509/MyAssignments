@@ -54,13 +54,13 @@ public class Assignment7Q1 {
         }
 
         System.out.println("2. Display color wise list of fruit names.");
-        fruitList.stream().forEach(x -> System.out.println(x.name + " " + x.color));
+        fruitList.stream().forEach(x -> System.out.println(x.getName() + " " + x.getColor()));
 //        for (Fruit fruitObj : fruitList) {
 //            System.out.println(fruitObj.name + " " + fruitObj.color);
 //        }
 
         System.out.println("3. Display only RED color fruits sorted as per their price in ascending order.");
-        List<Fruit> sortedByPriceList = fruitList.stream().filter(x -> x.color.equals("Red")).sorted(new SortByPrice()).collect(Collectors.toList());
+        List<Fruit> sortedByPriceList = fruitList.stream().filter(x -> x.getColor().equals("Red")).sorted(new SortByPrice()).collect(Collectors.toList());
         for(Fruit fruitObj : sortedByPriceList){
             System.out.println(fruitObj);
         }

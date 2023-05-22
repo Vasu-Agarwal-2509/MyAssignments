@@ -1,10 +1,10 @@
 package StreamsAssignment;
 
 public class Fruit {
-    String name;
-    int calories;
-    int price;
-    String color;
+    private String name;
+    private int calories;
+    private int price;
+    private String color;
 
     public Fruit(String name, int calories, int price, String color){
         this.name = name;
