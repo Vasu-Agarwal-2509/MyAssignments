@@ -1,6 +1,6 @@
 package GenericsAssignment;
 
-public class Assignment4Q3 {
+public class Assignment4Q4 {
     public static void main(String[] args) {
         Pair pairObj = new Pair();
         pairObj.setKey("1");
