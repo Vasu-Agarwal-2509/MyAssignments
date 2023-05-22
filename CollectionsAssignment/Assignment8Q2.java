@@ -16,6 +16,7 @@ public class Assignment8Q2 {
             System.out.println(it.next() + " ");
         }
 
+
         //By using TreeSet
         Set<Integer> treeSet = new TreeSet<>();
         while(treeSet.size() != 10){
@@ -26,5 +27,6 @@ public class Assignment8Q2 {
         while(it1.hasNext()){
             System.out.println(it1.next());
         }
+
     }
 }
