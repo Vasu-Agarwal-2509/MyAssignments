@@ -44,6 +44,6 @@ public class Assignment5Q2 {
         orders.add(obj5);
 
         ArrayList<Assignment5Q2> listObtained = listOfOrders(orders);
-        listObtained.forEach(obj -> System.out.println("Total Price: " + obj.totalPrice + " Status: " + obj.status));
+        listObtained.forEach(mainObj -> System.out.println("Total Price: " + mainObj.totalPrice + " Status: " + mainObj.status));
     }
 }
